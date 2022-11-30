@@ -5,13 +5,13 @@
   Time: 오전 12:48
   To change this template use File | Settings | File Templates.
 --%>
-<link rel="stylesheet" href="../css/common.css">
-<link rel="stylesheet" href="../css/header(ver1.0.2).css">
-<link rel="stylesheet" href="../css/Interior_detail.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/header(ver1.0.2).css">
+<link rel="stylesheet" href="./css/Interior_detail.css">
 
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="../js/header(ver1.0.2).js"></script>
-<script src="../js/Interior_detail.js"></script>
+<script src="./js/header(ver1.0.2).js"></script>
+<script src="./js/Interior_detail.js"></script>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -22,10 +22,10 @@
   <header class="header">
     <div class="content_area header_top">
       <ul class="top_nav_ul">
-        <!-- 로그인 페이지로 이동 -->
-        <li><a href="#">LOGIN</a></li>
         <!-- 회원가입 페이지로 이동 -->
         <li><a href="#">JOIN</a></li>
+        <!-- 로그인 페이지로 이동 -->
+        <li><a href="#">LOGIN</a></li>
         <!-- 위시리스트 내역 페이지로 이동 -->
         <li><a href="#">WISHLIST</a></li>
         <!-- 본인인증 후 / 마이페이지로 이동 -->
@@ -43,33 +43,19 @@
         </form>
       </div>
       <!-- 로고 클릭시 메인페이지로 이동 -->
-      <a href="#"><div class="logo"><img src="img/fiximg/logo_black.png" alt=""></div></a>
+      <a href="#"><div class="logo"><img src="img/headerImg/logo_black.png" alt=""></div></a>
     </div>
 
     <div class="header_bottom">
       <div class="content_area">
-        <!-- 호버하면 영어에서 한글로 변경 -->
         <ul class="bottom_nav_ul">
-          <li>
-            <div class="kor">가구</div>
-            <div class="eng">Furniture</div>
-          </li>
-          <li>
-            <div class="kor">조명</div>
-            <div class="eng">Lighting</div>
-          </li>
-          <li>
-            <div class="kor">부엌</div>
-            <div class="eng">Kitchen</div>
-          </li>
-          <li>
-            <div class="kor">인테리어</div>
-            <div class="eng">Home Deco</div>
-          </li>
-          <li>
-            <div class="kor">세일</div>
-            <div class="eng">Hot Deal</div>
-          </li>
+          <li class="box">Furniture</li>
+          <li class="box">Lighting</li>
+          <li class="box">Fabric</li>
+          <!-- 홈데코 클릭시 인테리어 페이지 이동 -->
+          <li><a href="">Home Deco</a></li>
+          <!-- 특가페이지 이동 -->
+          <li><a href="">Hot Deal</a></li>
         </ul>
       </div>
     </div>
@@ -79,60 +65,76 @@
           <li class="li_Title">Furniture</li>
           <li class="li_content">
             <ul class="ca_box" onclick="location.href='#';">
-              <li class="ca_txt">Boutique Furniture</li>
-              <li class="ca_img"><img src="img/fiximg/Furn1.png"></li>
+              <li class="ca_txt">Table</li>
+              <li class="ca_img"><img src="img/headerImg/Furn1.png"></li>
             </ul>
             <ul class="ca_box" onclick="location.href='#';">
               <li class="ca_txt">Table & Dining</li>
-              <li class="ca_img"><img src="img/fiximg/Furn2.png"></li>
+              <li class="ca_img"><img src="img/headerImg/Furn2.png"></li>
             </ul>
             <ul class="ca_box" onclick="location.href='#';">
               <li class="ca_txt">Chair</li>
-              <li class="ca_img"><img src="img/fiximg/Furn3.png"></li>
+              <li class="ca_img"><img src="img/headerImg/Furn3.png"></li>
             </ul>
             <ul class="ca_box" onclick="location.href='#';">
               <li class="ca_txt">Sofa</li>
-              <li class="ca_img"><img src="img/fiximg/Furn4.png"></li>
+              <li class="ca_img"><img src="img/headerImg/Furn4.png"></li>
             </ul>
             <ul class="ca_box" onclick="location.href='#';">
-              <li class="ca_txt">Global Furniture</li>
-              <li class="ca_img"><img src="img/fiximg/Furn5.png"></li>
+              <li class="ca_txt">Desk</li>
+              <li class="ca_img"><img src="img/headerImg/Furn5.png"></li>
             </ul>
             <ul class="ca_box" onclick="location.href='#';">
               <li class="ca_txt">TV Stand & Storage</li>
-              <li class="ca_img"><img src="img/fiximg/Furn6.png"></li>
+              <li class="ca_img"><img src="img/headerImg/Furn6.png"></li>
             </ul>
             <ul class="ca_box" onclick="location.href='#';">
               <li class="ca_txt">Small Furniture</li>
-              <li class="ca_img"><img src="img/fiximg/Furn7.png"></li>
+              <li class="ca_img"><img src="img/headerImg/Furn7.png"></li>
             </ul>
             <ul class="ca_box" onclick="location.href='#';">
               <li class="ca_txt">Bed</li>
-              <li class="ca_img"><img src="img/fiximg/Furn8.png"></li>
+              <li class="ca_img"><img src="img/headerImg/Furn8.png"></li>
             </ul>
           </li>
 
         </ul>
         <ul class="ul_category_box">
           <li class="li_Title">Lighting</li>
-          <li class="li_content"></li>
+          <li>
+            <ul class="li_content str">
+              <li class="l_txt">pendant</li>
+              <li class="l_txt">table</li>
+              <li class="l_txt">floor lamp</li>
+              <li class="l_txt">wall</li>
+              <li class="l_txt">ceiling</li>
+            </ul>
+          </li>
 
         </ul>
         <ul class="ul_category_box">
-          <li class="li_Title">Kitchen</li>
-          <li class="li_content"></li>
+          <li class="li_Title">Fabric</li>
+          <li>
+            <ul class="li_content str right">
+              <li class="l_txt">Curtain</li>
+              <li class="l_txt">Rug</li>
+              <li class="l_txt">blind</li>
+              <li class="l_txt">mat</li>
+              <li></li>
+            </ul>
+          </li>
+
+        </ul>
+        <!-- <ul class="ul_category_box">
+            <li class="li_Title">Home Deco</li>
+            <li class="li_content"></li>
 
         </ul>
         <ul class="ul_category_box">
-          <li class="li_Title">Home Deco</li>
-          <li class="li_content"></li>
+            <li class="li_Title">Hot Deal</li>
+            <li class="li_content"></li>
 
-        </ul>
-        <ul class="ul_category_box">
-          <li class="li_Title">Hot Deal</li>
-          <li class="li_content"></li>
-
-        </ul>
+        </ul> -->
       </div>
     </div>
   </header>
@@ -202,7 +204,7 @@
                 <ul class="Interior_case">
                   <li class="Interior_case_box">
                     <a href="">
-                      <img class="Interior_case_img" src="img/interior_5(3).jpg"  alt="">
+                      <img class="Interior_case_img" id="Interior_box1" src="img/interior_5(3).jpg"  alt="">
                     </a>
 
                   </li>
@@ -210,7 +212,7 @@
 
                   <li class="Interior_case_box">
                     <a href="">
-                      <img class="Interior_case_img" src="img/interior_5(4).jpg"  alt="">
+                      <img class="Interior_case_img" id="Interior_box2" src="img/interior_5(4).jpg"  alt="">
                     </a>
 
                   </li>
@@ -220,21 +222,21 @@
 
                   <li class="Interior_case_box">
                     <a href="">
-                      <img class="Interior_case_img" src="img/interior_5(5).jpg" width="100%" alt="">
+                      <img class="Interior_case_img" id="Interior_box3" src="img/interior_5(5).jpg" width="100%" alt="">
+                    </a>
+
+                  </li>
+
+                  <li class="Interior_case_box" >
+                    <a href="">
+                      <img class="Interior_case_img" id="Interior_box4" src="img/interior_5(6).jpg" width="100%" alt="">
                     </a>
 
                   </li>
 
                   <li class="Interior_case_box">
                     <a href="">
-                      <img class="Interior_case_img" src="img/interior_5(6).jpg" width="100%" alt="">
-                    </a>
-
-                  </li>
-
-                  <li class="Interior_case_box">
-                    <a href="">
-                      <img class="Interior_case_img" src="img/interior_5(7).jpg" width="100%" alt="">
+                      <img class="Interior_case_img" id="Interior_box5" src="img/interior_5(7).jpg" width="100%" alt="">
                     </a>
 
                   </li>
@@ -258,10 +260,10 @@
             <img src="img/interior_5(5).jpg" width="100%" style="height:80%" alt="">
           </p>
           <p class="Interior_arrow_box" id="arrow4">데일리 단모 사계절 원형 러그 카페트 13,900원
-            <img src="img/interior_5(7).jpg" width="100%" style="height:75%" alt="">
+            <img src="img/interior_5(6).jpg" width="100%" style="height:75%" alt="">
           </p>
           <p class="Interior_arrow_box" id="arrow5">신혼집 인테리어 포스터 33,500원
-            <img src="img/interior_5(6).jpg" width="100%" style="height:80%" alt="">
+            <img src="img/interior_5(7).jpg" width="100%" style="height:80%" alt="">
           </p>
 
 
@@ -273,7 +275,9 @@
 
 
 
-        <div class="Interior_box2"></div>
+        <div class="Interior_box2">
+          <img src="img/interior_5(0).png">
+        </div>
 
 
         <div class="Interior_box3">

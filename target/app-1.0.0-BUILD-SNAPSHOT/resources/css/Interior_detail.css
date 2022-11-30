@@ -224,7 +224,6 @@ body{
 .Interior_box2{
     width: 535px;
     height: 309px;
-    background: url(https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/interior3ds/166115605772761026.png?gif=1&w=640&webp=1)no-repeat center;
     border: 2px rgba(0,0,0,0.3) solid;
 }
 
@@ -364,7 +363,7 @@ body{
 
 #arrow1 {
     position: relative;
-    top: -41%;
+    top: -103%;
     left: 75%;
     right: 19px;
     width: 125px;
@@ -379,7 +378,7 @@ body{
 }
 #arrow2 {
     position: relative;
-    top: -34%;
+    top: -86%;
     left: 80%;
     right: 19px;
     width: 125px;
@@ -391,9 +390,10 @@ body{
     font-size: 15px;
     display: none;
 }
+
 #arrow3 {
     position: relative;
-    top: -33%;
+    top: -82%;
     left: 69%;
     right: 19px;
     width: 125px;
@@ -408,7 +408,7 @@ body{
 
 #arrow4 {
     position: relative;
-    top: -24%;
+    top: -61%;
     left: 35%;
     right: 19px;
     width: 125px;
@@ -422,7 +422,7 @@ body{
 }
 #arrow5 {
     position: relative;
-    top: -50%;
+    top: -130%;
     left: 70%;
     right: 19px;
     width: 125px;
@@ -453,6 +453,7 @@ body{
 
 
 .Interior_item_list{
+    top: 5px;
     position: relative;
 }
 .Interior_case{
@@ -488,5 +489,5 @@ body{
     position: absolute;
     width: 100%;
     height: 300px;
-    background-color: rgb(58, 58, 57);
+    background-color: #ddd;
 }

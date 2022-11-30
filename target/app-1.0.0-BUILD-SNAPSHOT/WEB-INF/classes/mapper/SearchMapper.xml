@@ -5,19 +5,29 @@
 <mapper namespace="com.hanssem.app.dao.SearchMapper">
     <!--    검색어 포함 상품 전체 가져오기-->
     <select id="searchProduct" parameterType="SearchCondition" resultType="SearchResult">
-        SELECT distinct p.product_number, p.product_name, p.product_price, p.product_register_date, p.category_code_number, c.category_code_name, i.image_path, r.review_rank, r.review_count, p.product_status, sales.product_sales, sp.special_product_discount AS 'discount_rate'
-        FROM special_product sp, image i, category_code c, product p LEFT OUTER JOIN
-        (SELECT product_number, AVG(review_rank) AS review_rank, COUNT(product_number) as review_count FROM review GROUP BY product_number) AS r
+        SELECT distinct p.product_number
+        , p.product_name
+        , p.product_price
+        , p.product_register_date
+        , p.category_code_number
+        , c.category_code_name
+        , i.image_path
+        , r.review_rank
+        , r.review_count
+        , p.product_status
+        , sales.product_sales
+        , sp.special_product_discount AS 'discount_rate'
+        FROM product p
+        LEFT OUTER JOIN (SELECT product_number, AVG(review_rank) AS review_rank, COUNT(product_number) as review_count FROM review GROUP BY product_number) AS r
         ON p.product_number = r.product_number
+        LEFT OUTER JOIN category_code c ON c.category_code_number = p.category_code_number
+        LEFT OUTER JOIN image i ON i.product_number = p.product_number
+        LEFT OUTER JOIN special_product sp ON sp.product_number = p.product_number
         LEFT OUTER JOIN (SELECT product_number, SUM(purchase_amount) AS product_sales FROM purchase GROUP BY product_number) AS sales
         ON p.product_number = sales.product_number
-        WHERE i.product_number = p.product_number
-        AND sp.product_number = p.product_number
-        AND c.category_code_number = p.category_code_number
-        AND p.product_tag LIKE CONCAT('%',#{search},'%')
-        ORDER  BY product_sales DESC, p.product_register_date DESC
+        WHERE p.product_tag LIKE CONCAT('%',#{search},'%')
+        <include refid="sort" />
         LIMIT #{offset}, #{pageSize}
-
     </select>
     <select id="searchSelectCount" parameterType="SearchCondition" resultType="int">
         SELECT COUNT(*) FROM product WHERE true
@@ -30,6 +40,27 @@
 
     <!--    사이즈 목록 가져오기-->
     <select id="selectSizeList" resultType="SizeDto">
-
+        SELECT * FROM category_size
     </select>
+
+    <sql id="sort">
+        <if test="sort == null">
+            ORDER BY sales.product_sales DESC, p.product_register_date DESC
+        </if>
+        <if test="sort == 'popular'">
+            ORDER BY sales.product_sales DESC, p.product_register_date DESC
+        </if>
+        <if test="sort == 'rate'">
+            ORDER BY r.review_rank DESC, r.review_count DESC
+        </if>
+        <if test="sort == 'new'">
+            ORDER BY p.product_register_date DESC, sales.product_sales DESC, r.review_rank DESC
+        </if>
+        <if test="sort == 'low'">
+            ORDER BY p.product_price ASC
+        </if>
+        <if test="sort == 'high'">
+            ORDER BY p.product_price DESC
+        </if>
+    </sql>
 </mapper>

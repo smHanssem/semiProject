@@ -23,10 +23,10 @@
   <header class="header">
     <div class="content_area header_top">
       <ul class="top_nav_ul">
-        <!-- 로그인 페이지로 이동 -->
-        <li><a href="#">LOGIN</a></li>
         <!-- 회원가입 페이지로 이동 -->
         <li><a href="#">JOIN</a></li>
+        <!-- 로그인 페이지로 이동 -->
+        <li><a href="#">LOGIN</a></li>
         <!-- 위시리스트 내역 페이지로 이동 -->
         <li><a href="#">WISHLIST</a></li>
         <!-- 본인인증 후 / 마이페이지로 이동 -->
@@ -44,33 +44,19 @@
         </form>
       </div>
       <!-- 로고 클릭시 메인페이지로 이동 -->
-      <a href="#"><div class="logo"><img src="img/fiximg/logo_black.png" alt=""></div></a>
+      <a href="#"><div class="logo"><img src="img/headerImg/logo_black.png" alt=""></div></a>
     </div>
 
     <div class="header_bottom">
       <div class="content_area">
-        <!-- 호버하면 영어에서 한글로 변경 -->
         <ul class="bottom_nav_ul">
-          <li>
-            <div class="kor">가구</div>
-            <div class="eng">Furniture</div>
-          </li>
-          <li>
-            <div class="kor">조명</div>
-            <div class="eng">Lighting</div>
-          </li>
-          <li>
-            <div class="kor">부엌</div>
-            <div class="eng">Kitchen</div>
-          </li>
-          <li>
-            <div class="kor">인테리어</div>
-            <div class="eng">Home Deco</div>
-          </li>
-          <li>
-            <div class="kor">세일</div>
-            <div class="eng">Hot Deal</div>
-          </li>
+          <li class="box">Furniture</li>
+          <li class="box">Lighting</li>
+          <li class="box">Fabric</li>
+          <!-- 홈데코 클릭시 인테리어 페이지 이동 -->
+          <li><a href="">Home Deco</a></li>
+          <!-- 특가페이지 이동 -->
+          <li><a href="">Hot Deal</a></li>
         </ul>
       </div>
     </div>
@@ -80,60 +66,76 @@
           <li class="li_Title">Furniture</li>
           <li class="li_content">
             <ul class="ca_box" onclick="location.href='#';">
-              <li class="ca_txt">Boutique Furniture</li>
-              <li class="ca_img"><img src="img/fiximg/Furn1.png"></li>
+              <li class="ca_txt">Table</li>
+              <li class="ca_img"><img src="img/headerImg/Furn1.png"></li>
             </ul>
             <ul class="ca_box" onclick="location.href='#';">
               <li class="ca_txt">Table & Dining</li>
-              <li class="ca_img"><img src="img/fiximg/Furn2.png"></li>
+              <li class="ca_img"><img src="img/headerImg/Furn2.png"></li>
             </ul>
             <ul class="ca_box" onclick="location.href='#';">
               <li class="ca_txt">Chair</li>
-              <li class="ca_img"><img src="img/fiximg/Furn3.png"></li>
+              <li class="ca_img"><img src="img/headerImg/Furn3.png"></li>
             </ul>
             <ul class="ca_box" onclick="location.href='#';">
               <li class="ca_txt">Sofa</li>
-              <li class="ca_img"><img src="img/fiximg/Furn4.png"></li>
+              <li class="ca_img"><img src="img/headerImg/Furn4.png"></li>
             </ul>
             <ul class="ca_box" onclick="location.href='#';">
-              <li class="ca_txt">Global Furniture</li>
-              <li class="ca_img"><img src="img/fiximg/Furn5.png"></li>
+              <li class="ca_txt">Desk</li>
+              <li class="ca_img"><img src="img/headerImg/Furn5.png"></li>
             </ul>
             <ul class="ca_box" onclick="location.href='#';">
               <li class="ca_txt">TV Stand & Storage</li>
-              <li class="ca_img"><img src="img/fiximg/Furn6.png"></li>
+              <li class="ca_img"><img src="img/headerImg/Furn6.png"></li>
             </ul>
             <ul class="ca_box" onclick="location.href='#';">
               <li class="ca_txt">Small Furniture</li>
-              <li class="ca_img"><img src="img/fiximg/Furn7.png"></li>
+              <li class="ca_img"><img src="img/headerImg/Furn7.png"></li>
             </ul>
             <ul class="ca_box" onclick="location.href='#';">
               <li class="ca_txt">Bed</li>
-              <li class="ca_img"><img src="img/fiximg/Furn8.png"></li>
+              <li class="ca_img"><img src="img/headerImg/Furn8.png"></li>
             </ul>
           </li>
 
         </ul>
         <ul class="ul_category_box">
           <li class="li_Title">Lighting</li>
-          <li class="li_content"></li>
+          <li>
+            <ul class="li_content str">
+              <li class="l_txt">pendant</li>
+              <li class="l_txt">table</li>
+              <li class="l_txt">floor lamp</li>
+              <li class="l_txt">wall</li>
+              <li class="l_txt">ceiling</li>
+            </ul>
+          </li>
 
         </ul>
         <ul class="ul_category_box">
-          <li class="li_Title">Kitchen</li>
-          <li class="li_content"></li>
+          <li class="li_Title">Fabric</li>
+          <li>
+            <ul class="li_content str right">
+              <li class="l_txt">Curtain</li>
+              <li class="l_txt">Rug</li>
+              <li class="l_txt">blind</li>
+              <li class="l_txt">mat</li>
+              <li></li>
+            </ul>
+          </li>
+
+        </ul>
+        <!-- <ul class="ul_category_box">
+            <li class="li_Title">Home Deco</li>
+            <li class="li_content"></li>
 
         </ul>
         <ul class="ul_category_box">
-          <li class="li_Title">Home Deco</li>
-          <li class="li_content"></li>
+            <li class="li_Title">Hot Deal</li>
+            <li class="li_content"></li>
 
-        </ul>
-        <ul class="ul_category_box">
-          <li class="li_Title">Hot Deal</li>
-          <li class="li_content"></li>
-
-        </ul>
+        </ul> -->
       </div>
     </div>
   </header>
@@ -150,14 +152,20 @@
 
       <div class="contents_right">
         <div class="right_menu1">
-          <div class="slidebox one">
-            <div class="on"></div>
 
-          </div>
+         <a href="Interior_detail" target="_blank">
+           <div class="slidebox one">
+             <div class="on"></div>
 
-          <div class="slidebox two">
-            <div class="tw"></div>
-          </div>
+           </div>
+          </a>
+
+
+          <a href="Interior_detail" target="_blank">
+           <div class="slidebox two">
+             <div class="tw"></div>
+           </div>
+          </a>
 
 
           <input type="button" value="〈" class="btn_slide" id="btn_slide_L">
@@ -170,7 +178,7 @@
         <div class="right_menu2">
 
           <div class="tab_content">
-            <a href="Interior1.jsp">
+            <a href="Interior">
               <div class="menu2_item">
                 <input type="radio" name="tabmenu" id="tab01">
                 거실
@@ -178,14 +186,14 @@
             </a>
 
 
-            <a href="Interior2.jsp">
+            <a href="Interior2">
               <div class="menu2_item">
                 <input type="radio" name="tabmenu" id="tab02">
                 침실
               </div>
             </a>
 
-            <a href="Interior3.jsp">
+            <a href="Interior3">
               <div class="menu2_item">
                 <input type="radio" name="tabmenu" id="tab03">
                 욕실
@@ -194,7 +202,7 @@
 
 
 
-            <a href="Interior4.jsp" class="ck">
+            <a href="Interior4" class="ck">
               <div class="menu2_item" id="tab2">
                 <input type="radio" name="tabmenu" id="tab04" checked>
                 부엌
@@ -218,7 +226,7 @@
               <a><img src="img/interior_4(1).jpg" width="400" height="330" alt=""></a>
             </li>
             <div class="txt_box">
-              <a href="Interior_detail.jsp" target="_blank">
+              <a href="Interior_detail" target="_blank">
                 <p>주방인테리어</p>
                 <p >400,000원~</p>
               </a>
@@ -227,7 +235,7 @@
           </ul>
 
           <div class="q">
-            <h4 class="w">주방인테리어</h4>
+            <p>주방인테리어</p>
           </div>
 
         </div>
@@ -238,7 +246,7 @@
               <a><img src="img/interior_4(2).jpg" width="400" height="330" alt=""></a>
             </li>
             <div class="txt_box">
-              <a href="Interior_detail.jsp" target="_blank">
+              <a href="Interior_detail" target="_blank">
                 <p>식탁인테리어</p>
                 <p>200,000원~</p>
               </a>
@@ -246,7 +254,7 @@
           </ul>
 
           <div class="q">
-            <h4 class="w">포레스트빌리지</h4>
+            <p>포레스트빌리지</p>
           </div>
 
         </div>
@@ -257,14 +265,14 @@
               <a><img src="img/interior_4(3).jpg" width="400" height="330" alt=""></a>
             </li>
             <div class="txt_box">
-              <a href="Interior_detail.jsp" target="_blank">
+              <a href="Interior_detail" target="_blank">
                 <p>E0300 싱크대</p>
                 <p>400,000원~</p>
               </a>
             </div>
           </ul>
           <div class="q">
-            <h4 class="w">다양한 컬러를 활용한 주방 인테리어</h4>
+            <p>다양한 컬러를 활용한 주방 인테리어</p>
           </div>
         </div>
         <div class="Interior_item">
@@ -273,14 +281,14 @@
               <a><img src="img/interior_4(4).jpg" width="400" height="330"alt=""></a>
             </li>
             <div class="txt_box">
-              <a href="Interior_detail.jsp" target="_blank">
+              <a href="Interior_detail" target="_blank">
                 <p>베이지</p>
                 <p>400,000원~</p>
               </a>
             </div>
           </ul>
           <div class="q">
-            <h4 class="w">반셀프 주방 인테리어</h4>
+            <p>반셀프 주방 인테리어</p>
           </div>
         </div>
         <div class="Interior_item">
@@ -289,14 +297,14 @@
               <a><img src="img/interior_4(5).jpg" width="400" height="330" alt=""></a>
             </li>
             <div class="txt_box">
-              <a href="Interior_detail.jsp" target="_blank">
+              <a href="Interior_detail" target="_blank">
                 <p>심플한 주방</p>
                 <p>200,000원~</p>
               </a>
             </div>
           </ul>
           <div class="q">
-            <h4 class="w">4가지 방법으로 꾸며본 행복주택</h4>
+            <p>4가지 방법으로 꾸며본 행복주택</p>
           </div>
         </div>
         <div class="Interior_item">
@@ -305,14 +313,14 @@
               <a><img src="img/interior_4(6).jpg" width="400" height="330" alt=""></a>
             </li>
             <div class="txt_box">
-              <a href="Interior_detail.jsp" target="_blank">
+              <a href="Interior_detail" target="_blank">
                 <p>E0900 유로 베이지</p>
                 <p>400,000원~</p>
               </a>
             </div>
           </ul>
           <div class="q">
-            <h4 class="w">베스트 주방</h4>
+            <p>베스트 주방</p>
           </div>
         </div>
         <div class="Interior_item">
@@ -321,14 +329,14 @@
               <a><img src="img/interior_4(7).jpg" width="400" height="330" alt=""></a>
             </li>
             <div class="txt_box">
-              <a href="Interior_detail.jsp" target="_blank">
+              <a href="Interior_detail" target="_blank">
                 <p>E0300 심플 베이지</p>
                 <p>800,000원~</p>
               </a>
             </div>
           </ul>
           <div class="q">
-            <h4 class="w">행복주택 인테리어</h4>
+            <p>행복주택 인테리어</p>
           </div>
         </div>
         <div class="Interior_item">
@@ -337,14 +345,14 @@
               <a><img src="img/interior_4(8).jpg" width="400" height="330" alt=""></a>
             </li>
             <div class="txt_box">
-              <a href="Interior_detail.jsp" target="_blank">
+              <a href="Interior_detail" target="_blank">
                 <p>E0200 베이지</p>
                 <p>400,000원~</p>
               </a>
             </div>
           </ul>
           <div class="q">
-            <h4 class="w">맛 좋은 주방</h4>
+            <p>맛 좋은 주방</p>
           </div>
         </div>
 
@@ -354,14 +362,14 @@
               <a><img src="img/interior_4(9).jpg" width="400" height="330" alt=""></a>
             </li>
             <div class="txt_box">
-              <a href="Interior_detail.jsp" target="_blank">
+              <a href="Interior_detail" target="_blank">
                 <p>E0300 유로 화이트</p>
                 <p>400,000원~</p>
               </a>
             </div>
           </ul>
           <div class="q">
-            <h4 class="w">차분한 우드톤 주방</h4>
+            <p>차분한 우드톤 주방</p>
           </div>
         </div>
         <div class="Interior_item">
@@ -370,14 +378,14 @@
               <a><img src="img/interior_4(10).jpg" width="400" height="330" alt=""></a>
             </li>
             <div class="txt_box">
-              <a href="Interior_detail.jsp" target="_blank">
+              <a href="Interior_detail" target="_blank">
                 <p>유로 화이트</p>
                 <p>300,000원~</p>
               </a>
             </div>
           </ul>
           <div class="q">
-            <h4 class="w">싱글라이프 인테리어</h4>
+            <p>싱글라이프 인테리어</p>
           </div>
         </div>
 
@@ -387,14 +395,14 @@
               <a><img src="img/interior_4(11).jpg" width="400" height="330" alt=""></a>
             </li>
             <div class="txt_box">
-              <a href="Interior_detail.jsp" target="_blank">
+              <a href="Interior_detail" target="_blank">
                 <p>달콤한 주방</p>
                 <p>300,000원~</p>
               </a>
             </div>
           </ul>
           <div class="q">
-            <h4 class="w">다움홈</h4>
+            <p>다움홈</p>
           </div>
         </div>
         <div class="Interior_item">
@@ -403,14 +411,14 @@
               <a><img src="img/interior_4(12).jpg" width="400" height="330" alt=""></a>
             </li>
             <div class="txt_box">
-              <a href="Interior_detail.jsp" target="_blank">
+              <a href="Interior_detail" target="_blank">
                 <p>E0300 유로 베이지</p>
                 <p>500,000원~</p>
               </a>
             </div>
           </ul>
           <div class="q">
-            <h4 class="w">빈티지 감성과 로망이 담긴 주방</h4>
+            <p>빈티지 감성과 로망이 담긴 주방</p>
           </div>
         </div>
         <div class="Interior_item">
@@ -419,14 +427,14 @@
               <a><img src="img/interior_4(13).jpg" width="400" height="330" alt=""></a>
             </li>
             <div class="txt_box">
-              <a href="Interior_detail.jsp" target="_blank">
+              <a href="Interior_detail" target="_blank">
                 <p>300 유로 화이트</p>
                 <p>800,000원~</p>
               </a>
             </div>
           </ul>
           <div class="q">
-            <h4 class="w">곳곳이 갤러리같은 주방</h4>
+            <p>곳곳이 갤러리같은 주방</p>
           </div>
         </div>
         <div class="Interior_item">
@@ -435,14 +443,14 @@
               <a><img src="img/interior_4(14).jpg" width="400" height="330"  alt=""></a>
             </li>
             <div class="txt_box">
-              <a href="Interior_detail.jsp" target="_blank">
+              <a href="Interior_detail" target="_blank">
                 <p>심플 베이지 주방</p>
                 <p>300,000원~</p>
               </a>
             </div>
           </ul>
           <div class="q">
-            <h4 class="w">우드톤으로 고급스러운 부엌</h4>
+            <p>우드톤으로 고급스러운 부엌</p>
           </div>
         </div>
         <div class="Interior_item">
@@ -451,14 +459,14 @@
               <a><img src="img/interior_4(15).jpg" width="400" height="330" alt=""></a>
             </li>
             <div class="txt_box">
-              <a href="Interior_detail.jsp" target="_blank">
+              <a href="Interior_detail" target="_blank">
                 <p>E0300 심플 화이트</p>
                 <p>800,000원~</p>
               </a>
             </div>
           </ul>
           <div class="q">
-            <h4 class="w">심플하고 화려한 부엌</h4>
+            <p>심플하고 화려한 부엌</p>
           </div>
         </div>
 

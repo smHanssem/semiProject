@@ -11,5 +11,9 @@
         <typeAlias alias="CateSizeDto" type="com.hanssem.app.dto.CateSizeDto"/>
         <typeAlias alias="ProductSizeColorDto" type="com.hanssem.app.dto.ProductSizeColorDto"/>
         <typeAlias alias="ColorCodeDto" type="com.hanssem.app.dto.ColorCodeDto"/>
+        <typeAlias alias="SearchCondition" type="com.hanssem.app.dto.SearchCondition" />
+        <typeAlias alias="CategoryDto" type="com.hanssem.app.dto.CategoryDto" />
+        <typeAlias alias="SearchResult" type="com.hanssem.app.dto.SearchResult" />
+        <typeAlias alias="SizeDto" type="com.hanssem.app.dto.SizeDto" />
     </typeAliases>
 </configuration>

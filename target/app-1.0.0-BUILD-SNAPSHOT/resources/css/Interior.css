@@ -259,14 +259,14 @@ body{
     background: #fff;
 }
 
-.one { background:url("img/interior_banner1.jpg")no-repeat;}
-.on{background:url("img/interior_banner2.jpg")no-repeat;
+.one { background:url("../img/interior_banner1.jpg")no-repeat;}
+.on{background:url("../img/interior_banner2.jpg")no-repeat;
     width: 470px;
     height: 480px;
     float: right;
 }
-.two { background:url("img/interior_banner3.jpg")no-repeat;}
-.tw{ background:url("img/interior_banner4.jpg")no-repeat;
+.two { background:url("../img/interior_banner3.jpg")no-repeat;}
+.tw{ background:url("../img/interior_banner4.jpg")no-repeat;
     width: 470px;
     height: 480px;
     float: right;
@@ -373,7 +373,7 @@ input[type="radio"]{display: none;}
 
 .q{
     text-align: center;
-
+    font-weight: 900;
 }
 
 
@@ -381,5 +381,5 @@ input[type="radio"]{display: none;}
 .footer {
     width: 100%;
     height: 300px;
-    background-color: rgb(58, 58, 57);
+    background-color: #ddd;
 }
